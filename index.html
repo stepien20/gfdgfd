@@ -9,25 +9,44 @@
 
 </head>
 <body>
-    <div class="container d-flex align-content-center ">
+    <div class="container d-flex align-content-center flex-wrap">
         <header class="row h1 text-primary w-100 d-flex justify-content-center">Metody tablicowe</header>
-        <main class="row border border-1 border-primary">
-            <form>
-                <div class="form-group">
+        <main class="row border border-1 border-primary w-100">
+            <form class="d-flex justify-content-evenly flex-wrap">
+                <div class="row form-group d-flex flex-column align-items-start">
                   <label for="name">Imię</label>
                   <input type="text" class="form-control" id="name">
                 </div>
-                <div class="form-group">
+                <div class="form-group d-flex flex-column align-items-start">
                     <label for="city">Miasto</label>
                     <input type="text" class="form-control" id="city">
                 </div>
-                <div class="form-group">
+                <div class="form-group d-flex flex-column align-items-start">
                     <label for="age">Wiek</label>
                     <input type="text" class="form-control" id="age">
                 </div>
+                <div class="row w-100 mt-2">
+                    <div class="d-flex justify-content-center">
+                        <button type="submit" class="btn border border-success text-success px-5">dodaj</button>
+                    </div>
+                </div>
             </form>
+            <div>
+                <hr class="fw-bold m-3 text-danger">
+            </div>
+            <div class="dropdown">
+                <button class="btn dropdown-toggle w-100 border border-1 mx-5" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown button
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+
         </main>
-        <section class="row border border-1 border-primary"></section>
+        <section class="row border border-1 border-primary w-100"></section>
 
     </div>
 </body>
